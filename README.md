@@ -3,6 +3,7 @@
 
 # STEP 1 : Remotely access NCBI-GEO db.
 gedatafilename.input = Program1.pl(GE.dat){
+
   GSM = download_from_geo.pl($gsm);
   GSM.txt = process_html.pl(GSM);
   GPL = download_from_geo.pl(gpl);
